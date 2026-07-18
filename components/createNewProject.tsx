@@ -17,7 +17,7 @@ export default function CreateNewProject() {
   return (
     <div className="mt-3">
       <div className="p-10 rounded-lg border border-gray-200 bg-white shadow-sm">
-        <div className="mt-6">
+        <div className="mt-2">
           <span className="text-2xl font-bold">
             2: Create a New Project in the Deploy App
           </span>
@@ -40,7 +40,7 @@ export default function CreateNewProject() {
           </div>
           <div className="mt-2 flex flex-wrap items-center gap-2">
             <span>
-              4. Enter a name for your project (e.g., "Demo_App") and click
+              4. Enter a name for your project (e.g., &quot;Demo_App&quot;) and click
               Continue.
             </span>
 
@@ -84,9 +84,11 @@ export default function CreateNewProject() {
             >
               <div className="border-base-content/25 rounded-md border p-3">
                 <p className="text-base-content/80">
-                  <img
-                    src="Media/SetProject.jpg"
+                  <Image
+                    src="/Media/SetProject.jpg"
                     alt="Set up project"
+                    width={1200}
+                    height={700}
                     className="w-full h-auto rounded-md"
                   />
                 </p>
@@ -151,9 +153,11 @@ export default function CreateNewProject() {
                   >
                     <div className="border-base-content/25 rounded-md border p-3">
                       <p className="text-base-content/80">
-                        <img
-                          src="Media/addenvironment.jpg"
+                        <Image
+                          src="/Media/addenvironment.jpg"
                           alt="Set up project"
+                          width={1200}
+                          height={700}
                           className="w-full h-auto rounded-md mt-2"
                         />
                       </p>
@@ -219,9 +223,11 @@ export default function CreateNewProject() {
                   >
                     <div className="border-base-content/25 rounded-md border p-3">
                       <p className="text-base-content/80">
-                        <img
-                          src="Media/setRepository.jpg"
+                        <Image
+                          src="/Media/setRepository.jpg"
                           alt="Set up project"
+                          width={1200}
+                          height={700}
                           className="w-full h-auto rounded-md mt-2"
                         />
                       </p>

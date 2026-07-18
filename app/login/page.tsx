@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import CreateNewProject from "@/components/createNewProject";
+import ConfigurEditingHost from "@/components/ConfigurEditingHost";
+import ReviewAndDeploy from "@/components/reviewAndDeploy";
+
 
 const slides = [
   { src: "/Media/loginscreen.jpg", alt: "Login screen" },
@@ -136,6 +139,8 @@ export default function LoginPage() {
       </div>
 
       <CreateNewProject />
+      <ConfigurEditingHost />
+      <ReviewAndDeploy />
     </main>
   );
 }
