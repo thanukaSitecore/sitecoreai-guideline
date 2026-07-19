@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-type Slide = {
+export type Slide = {
   src: string;
   alt: string;
 };
@@ -20,7 +20,7 @@ export default function ImgCarousel({ slides }: ImgCarouselProps) {
     }, 8000);
 
     return () => window.clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   const scrollPrev = () =>
     setActiveIndex((current) => (current - 1 + slides.length) % slides.length);

@@ -24,10 +24,10 @@ export default function Navbar() {
               Step 1
             </Link>
             <Link
-              href="/services/mobile"
+              href="/createTemplate"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Mobile Apps
+              Step 2
             </Link>
           </div>
         </div>

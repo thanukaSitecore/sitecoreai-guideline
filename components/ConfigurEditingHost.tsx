@@ -76,7 +76,7 @@ export default function ConfigurEditingHost() {
               <ul className="list-disc list-inside mt-2">
                 <li>
                   Enable the Feature: Toggle the Set up editing host switch to
-                  the "on" (green) position if you want to include a frontend
+                  the &quot;on&quot; (green) position if you want to include a frontend
                   application for viewing and editing content, layouts, and
                   other site components.
                 </li>
@@ -91,7 +91,7 @@ export default function ConfigurEditingHost() {
                   configuration.
                   <div className="mt-2 ml-2">
                     If you need to change these inherited settings, you must
-                    click the "Back" button to return to the previous
+                    click the &apos;Back&apos; button to return to the previous
                     configuration step.
                   </div>
                 </li>
