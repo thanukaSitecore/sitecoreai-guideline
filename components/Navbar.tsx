@@ -29,6 +29,12 @@ export default function Navbar() {
             >
               Step 2
             </Link>
+              <Link
+              href="/manualtemplate"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Step 3
+            </Link>
           </div>
         </div>
       </div>
