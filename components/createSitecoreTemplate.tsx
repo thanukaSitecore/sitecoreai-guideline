@@ -14,25 +14,15 @@ export default function CreateSitecoreTemplate() {
           <div className="text-2xl font-bold">
             Create the Template in Sitecore (Content Editor)
           </div>
-          <div className="mt-2">
-            <ul className="list-decimal list-inside mt-2">
-              <li>Create a new template or modify an existing one.</li>
-              <li>Navigate to /sitecore/templates/Project/YourProjectName.</li>
-              <li>
-                Right-click your project folder, click Insert &gt; Template, and
-                name it Article (or your preferred component name).
-              </li>
-              <li>Add a Template Section (e.g., Data)</li>
-              <li>
-                Add the following fields:
-                <ul className="list-circle  ml-2">
-                  <li>title (Type: Single-Line Text)</li>
-                  <li>description (Type: Rich Text)</li>
-                </ul>
-              </li>
+          <div className="mt-2 text-slate-700">
+            Create a template quickly:
+            <ul className="list-decimal list-inside mt-2 space-y-2">
+              <li>Create or open a template under <code>/sitecore/templates/Project/YourProjectName</code>.</li>
+              <li>Insert a new Template (name it e.g. <span className="font-semibold">Article</span>).</li>
+              <li>Add a Data section and fields such as <code>title</code> and <code>description</code>.</li>
               <li>Save the template.</li>
             </ul>
-            <div>
+            <div className="mt-3">
               <CarresolCollapsible slides={slides} />
             </div>
           </div>
@@ -44,23 +34,28 @@ export default function CreateSitecoreTemplate() {
           <div className="text-2xl font-bold">
             Create the JSON Rendering in Sitecore
           </div>
-          <div className="mt-2">
-            <ul className="list-decimal list-inside mt-2">              
-              <li>Navigate to /sitecore/layout/Renderings/Project/YourProjectName.</li>
-              <li>                
-                Right-click the folder, click &gt; Json Rendering, and name it Article (must match your template/component name).  
-              </li>              
-              <li>
-                Configure the rendering fields:  
-                <ul className="list-circle  ml-2">
-                  <li>Datasource Location: ./ (or your data folder path)</li>
-                  <li>Datasource Template: Select the Article template you created in Phase 1. (Type: Rich Text)</li>
-                </ul>
-              </li>
-              <li>Save the rendering item.</li>
+          <div className="mt-2 text-slate-700">
+            Create the JSON rendering (short):
+            <ul className="list-decimal list-inside mt-2 space-y-2">
+              <li>Go to <code>/sitecore/layout/Renderings/Project/YourProjectName</code>.</li>
+              <li>Add a new <strong>Json Rendering</strong> named to match your template (e.g. <code>Article</code>).</li>
+              <li>Set Datasource Location and select the Article template as the Datasource Template.</li>
+              <li>Save the rendering.</li>
             </ul>
-            <div>
+            <div className="mt-3">
               <ImgeCollapsible imgscr="/Media/jsonRendering.jpg" alttext="json Rendering" />
+            </div>
+          </div>
+           <div className="mt-2 text-slate-700">
+            Add Aviable Rendering:
+            <ul className="list-decimal list-inside mt-2 space-y-2">
+              <li>Go to <code>/sitecore/content/Your Tenant/Your Site/Presentation/Available Renderings/</code>.</li>
+              <li>Add a new <strong>Available Renderings</strong> named to match your Requirement (e.g. <code>BookShop</code>).</li>
+              <li>Click Edit and add your rendering</li>
+              <li>Save the Available Renderings.</li>
+            </ul>
+            <div className="mt-3">
+              <ImgeCollapsible imgscr="/Media/AvailableRenderings.jpg" alttext="Available Renderings" />
             </div>
           </div>
         </div>

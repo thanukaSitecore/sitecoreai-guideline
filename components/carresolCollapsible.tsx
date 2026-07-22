@@ -6,17 +6,18 @@ import ImgCarousel, { Slide } from "./imgCarousel";
 export default function CarresolCollapsible({ slides }: { slides: Slide[] }) {
   const [isOptionalconfiguration, setIsOptionalconfiguration] = useState(true);
   return (
-    <div className="mt-2 flex flex-wrap items-center gap-2">
+    <div className="mt-2">
       <button
         type="button"
         onClick={() => setIsOptionalconfiguration(!isOptionalconfiguration)}
-        className="btn btn-primary inline-flex items-center gap-2"
+        className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-slate-100 px-4 py-2 text-sm font-medium text-slate-900 shadow-sm transition hover:bg-slate-200"
         aria-expanded={!isOptionalconfiguration}
-        aria-controls="basic-collapse-heading"
+        aria-controls="carousel-preview-collapse"
       >
         <span
-          className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition-transform duration-300 focus:outline-none dark:bg-slate-800 dark:text-slate-100"
-          aria-hidden="true"
+          className={`inline-flex h-5 w-5 items-center justify-center rounded-full bg-white text-slate-700 shadow-sm transition-transform duration-200 ${
+            isOptionalconfiguration ? "rotate-0" : "rotate-180"
+          }`}
         >
           <svg
             viewBox="0 0 24 24"
@@ -25,28 +26,23 @@ export default function CarresolCollapsible({ slides }: { slides: Slide[] }) {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className={`h-4 w-4 transition-transform duration-300 ${
-              isOptionalconfiguration ? "rotate-0" : "rotate-180"
-            }`}
+            className="h-4 w-4"
           >
             <path d="M6 9l6 6 6-6" />
           </svg>
         </span>
-        <span>{isOptionalconfiguration ? "Show details" : "Hide details"}</span>
+        {isOptionalconfiguration ? "Show carousel preview" : "Hide carousel preview"}
       </button>
       <div
-        id="basic-collapse-heading"
-        className={`w-full overflow-hidden transition-all duration-300 mt-3 ${
-          isOptionalconfiguration
-            ? "max-h-0 opacity-0"
-            : "max-h-[500px] opacity-100"
+        id="carousel-preview-collapse"
+        className={`mt-3 overflow-hidden transition-all duration-300 ${
+          isOptionalconfiguration ? "max-h-0 opacity-0" : "max-h-[500px] opacity-100"
         }`}
-        aria-labelledby="basic-collapse"
       >
-        <div className="border-base-content/25 rounded-md border p-3">
-          <p className="text-base-content/80">
+        <div className="w-full">
+          <div className="relative w-full overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
             <ImgCarousel slides={slides} />
-          </p>
+          </div>
         </div>
       </div>
     </div>

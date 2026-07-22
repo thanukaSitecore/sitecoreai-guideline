@@ -21,50 +21,25 @@ export default function SetupRepository() {
         </div>
 
         <div className="mt-2">
-          <span className="text-2xl font-bold">
-            Steps to Prepare Your Local Environment
-          </span>
+          <span className="text-2xl font-bold">Steps to Prepare Your Local Environment</span>
           <CarresolCollapsible slides={slides} />
 
-          <div>
-            <div>
-              <ul className="list-disc list-inside mt-2">
-                <li>
-                  Open the Command Prompt (CMD): Press the Windows Key, type
-                  cmd, and press Enter to open the Command Prompt.
-                </li>
-                <li>
-                  Navigate to or Create Your Folder:
-                  <ul className="list-decimal list-inside ml-4">
-                    <li>
-                      To navigate to the C drive, type cd C:\ and press Enter.
-                    </li>
-                    <li>
-                      To create a new directory named &quot;SitecoreAI&quot; (if
-                      it does not exist), type mkdir SitecoreAI and press Enter.
-                    </li>
-                    <li>
-                      Move into that new folder by typing cd SitecoreAI and
-                      press Enter.
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Clone a Specific Branch: To clone only a specific branch
-                  instead of the entire repository, use the following command:
-                  
-                  <ul className="list-decimal list-inside ml-4 font-bold">
-                    <li>git clone -b &lt;branch-name&gt; &lt;repository-url&gt;.</li>
-                    <li>{'CD {{repofolder}}\\{{editing hosts folder}}\\{{editing host}}'}</li>
-                    <li>npm install</li>
-                    <li>code .</li>
-                    <li>npm run dev</li>
-                  </ul>
-                </li>               
+          <div className="mt-4 text-slate-700">
+            <ul className="list-disc list-inside space-y-2">
+              <li>Open a terminal and go to your project folder.</li>
+              <li>If needed, create a folder like <code>SitecoreAI</code> and navigate into it.</li>
+            </ul>
+            <div className="mt-3 text-slate-700">
+              <ul className="list-decimal list-inside ml-4 font-bold">
+                <li>git clone -b &lt;branch-name&gt; &lt;repository-url&gt;.</li>
+                <li>{'CD {{repofolder}}\\{{editing hosts folder}}\\{{editing host}}'}</li>
+                <li>npm install</li>
+                <li>code .</li>
+                <li>npm run dev</li>
               </ul>
-              <div>
-                You can find these settings in the Developer Settings section within SitecoreAI Deploy by navigating to: Projects &gt; All projects / My projects &gt; Select your project &gt; Select Environment &gt; Developer Settings.
-              </div>
+            </div>
+            <div className="mt-3 text-sm text-slate-500">
+              Use your SitecoreAI Deploy project settings to get the exact repository URL and branch.
             </div>
           </div>
         </div>
