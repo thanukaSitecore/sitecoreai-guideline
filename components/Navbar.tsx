@@ -52,16 +52,28 @@ export default function Navbar() {
               Step 1 : Create Data Source
             </Link>
             <Link
-              href="/createTemplate"
+              href="/Day2/PageBuild"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 2
+              Step 2 : Page Builder
             </Link>
-              <Link
-              href="/manualtemplate"
+             <Link
+              href="/Day2/Forms"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 3
+              Step 3 : Web Hooks and Forms
+            </Link>
+            <Link
+              href="/Day2/Workflow"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Step 4 : Workflow
+            </Link>
+            <Link
+              href="/Day2/GraphQL"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Step 5 : GraphQL
             </Link>
           </div>
         </div>
