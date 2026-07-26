@@ -30,9 +30,10 @@ export default function ExerciseNav() {
       {prevRoute ? (
         <Link
           href={prevRoute}
-          className="inline-flex items-center gap-2 rounded-lg bg-slate-100 px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-200"
+          className="group inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200 hover:border-slate-400 hover:bg-slate-50 hover:shadow-md active:scale-95"
         >
-          ← Previous Exercise
+          <span className="transition-transform duration-200 group-hover:-translate-x-1">←</span>
+          Previous Exercise
         </Link>
       ) : (
         <span />
@@ -40,9 +41,10 @@ export default function ExerciseNav() {
       {nextRoute ? (
         <Link
           href={nextRoute}
-          className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-700"
+          className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-blue-700 hover:shadow-md active:scale-95"
         >
-          Next Exercise →
+          Next Exercise
+          <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
         </Link>
       ) : (
         <span />
