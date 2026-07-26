@@ -1,6 +1,8 @@
+"use client";
 import Link from "next/link";
 
 export default function Navbar() {
+
   return (
     <nav className="bg-white shadow-md p-4">
       <div className="flex gap-6 items-center">

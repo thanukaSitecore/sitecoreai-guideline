@@ -5,7 +5,7 @@ import ImgeCollapsible from "./imgeCollapsible";
 export default function ConfigurEditingHost() {
   return (
     <div className="mt-3">
-      <div className="p-10 rounded-lg bg-white shadow-sm">
+      <div className="p-10 rounded-lg border border-gray-200 bg-white shadow-sm">
         <div className="mt-2">
           <span className="text-2xl font-bold">
             3: Optional: Configuring Your Editing Host
