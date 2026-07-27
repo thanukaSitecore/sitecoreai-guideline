@@ -20,22 +20,22 @@ export default function Navbar() {
           {/* Dropdown Menu - Hidden by default, shown on group-hover */}
           <div className="absolute left-0 top-full hidden group-hover:block bg-white border border-gray-200 shadow-xl rounded-md py-2 w-48">
             <Link
-              href="/login"
+              href="/Day1/login"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 1
+              Step 1 : Login and Setup
             </Link>
             <Link
-              href="/createTemplate"
+              href="/Day1/createTemplate"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 2
+              Step 2 : Setup Local Environment
             </Link>
               <Link
-              href="/manualtemplate"
+              href="/Day1/manualtemplate"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 3
+              Step 3 : Create Site and Template
             </Link>
           </div>
         </div>

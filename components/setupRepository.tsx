@@ -38,9 +38,7 @@ export default function SetupRepository() {
                 <li>npm run dev</li>
               </ul>
             </div>
-            <div className="mt-3 text-sm text-slate-500">
-              Use your SitecoreAI Deploy project settings to get the exact repository URL and branch.
-            </div>
+
           </div>
         </div>
       </div>
