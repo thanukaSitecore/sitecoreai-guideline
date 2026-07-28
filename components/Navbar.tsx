@@ -37,6 +37,18 @@ export default function Navbar() {
             >
               Step 3 : Create Site and Template
             </Link>
+            <Link
+              href="/Day1/DataSource"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Step 4 : Create Data Source
+            </Link>
+            <Link
+              href="/Day1/DataTemplateExercise"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Step 5 : Data Template Exercise
+            </Link>
           </div>
         </div>
         <div className="group relative">
@@ -47,23 +59,21 @@ export default function Navbar() {
 
           {/* Dropdown Menu - Hidden by default, shown on group-hover */}
           <div className="absolute left-0 top-full hidden group-hover:block bg-white border border-gray-200 shadow-xl rounded-md py-2 w-48">
-            <Link
-              href="/Day2/DataSource"
-              className="block px-4 py-2 hover:bg-gray-100"
-            >
-              Step 1 : Create Data Source
-            </Link>
+            
             <Link
               href="/Day2/PageBuild"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 2 : Page Builder
+              Step 1 : Page Builder
             </Link>
              <Link
               href="/Day2/Forms"
               className="block px-4 py-2 hover:bg-gray-100"
             >
-              Step 3 : Web Hooks and Forms
+              Step 2 : Web Hooks and Forms
+            </Link>
+            <Link href="/Day2/Day2Exercise" className="block px-4 py-2 hover:bg-gray-100">
+              Step 3 : Day 2 Exercise
             </Link>
             <Link
               href="/Day2/Workflow"
