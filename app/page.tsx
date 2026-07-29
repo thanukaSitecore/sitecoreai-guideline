@@ -19,7 +19,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col gap-4 sm:flex-row">
             <Link
-              href="/login"
+              href="/Day1/login"
               className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
             >
               Start Training
