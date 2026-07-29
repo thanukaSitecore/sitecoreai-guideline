@@ -78,6 +78,18 @@ export default function Day2Exercise() {
           </div>
         </div>
       </div>
+      <div className="p-10 rounded-lg border border-gray-200 bg-white shadow-sm mt-3">
+        <div className="mt-2">
+          <span className="text-2xl font-bold">Exercise Three</span>
+        </div>
+        <div>
+          <div>
+            <p className="mt-4 text-slate-700">
+              Deploy your front-end application to Vercel. You can follow the steps mentioned in the Vercel page.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
