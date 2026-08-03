@@ -9,17 +9,17 @@ export type LessonNavItem = {
 export const lessonNavigation: LessonNavItem[] = [
   {
     href: "/Day1/login",
-    label: "Step 1 : Login and Setup",
+    label: "Step 1 : Login & New Project",
     group: "Day 01",
   },
   {
     href: "/Day1/createTemplate",
-    label: "Step 2 : Setup Local Environment",
+    label: "Step 2 : Local Setup",
     group: "Day 01",
   },
   {
     href: "/Day1/manualtemplate",
-    label: "Step 3 : Create Site and Template",
+    label: "Step 3 : Template & Rendering",
     group: "Day 01",
   },
   {
@@ -34,7 +34,7 @@ export const lessonNavigation: LessonNavItem[] = [
   },
   {
     href: "/Day2/Forms",
-    label: "Step 2 : Web Hooks and Forms",
+    label: "Step 2 : Web Hooks & Forms",
     group: "Day 02",
   },
   {
@@ -44,7 +44,7 @@ export const lessonNavigation: LessonNavItem[] = [
   },
   {
     href: "/Day2/Day2Exercise",
-    label: "Step 4 : Day 2 Exercise",
+    label: "Step 4 : Day Two Exercise",
     group: "Day 02",
   },
   {
@@ -53,8 +53,13 @@ export const lessonNavigation: LessonNavItem[] = [
     group: "Day 02",
   },
   {
-    href: "/Day2/Workflow",
+    href: "/Bonus/Workflow",
     label: "Workflow",
+    group: "Bonus",
+  },
+   {
+    href: "/Bonus/Personalization",
+    label: "Personalization",
     group: "Bonus",
   },
 ];
