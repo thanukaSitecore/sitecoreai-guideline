@@ -9,6 +9,7 @@ export default function ImgeCollapsible({
   imgscr: string;
   alttext: string;
 }) {
+  const isGif = imgscr.toLowerCase().endsWith(".gif");
   const [isCollapsed, setIsCollapsed] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [zoomOrigin, setZoomOrigin] = useState("center center");
@@ -74,6 +75,7 @@ export default function ImgeCollapsible({
                 src={imgscr}
                 alt={alttext}
                 fill
+                unoptimized={isGif}
                 className="object-cover"
               />
             </div>
@@ -95,6 +97,7 @@ export default function ImgeCollapsible({
                     src={imgscr}
                     alt={alttext}
                     fill
+                    unoptimized={isGif}
                     className="object-contain"
                   />
                 </div>
