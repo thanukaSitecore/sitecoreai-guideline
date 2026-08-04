@@ -17,11 +17,11 @@ export default function ExerciseNav() {
       : null;
 
   return (
-    <div className="flex justify-between mt-8 mb-6 border-t border-gray-200 pt-6">
+    <div className="mx-auto mt-8 mb-6 flex w-full max-w-6xl justify-between border-t border-learning-border/35 px-4 pt-6 sm:px-6 lg:px-8">
       {prevRoute ? (
         <Link
           href={prevRoute.href}
-          className="group inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200 hover:border-slate-400 hover:bg-slate-50 hover:shadow-md active:scale-95"
+          className="btn-secondary group inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm"
         >
           <span className="transition-transform duration-200 group-hover:-translate-x-1">←</span>
           Previous Exercise
@@ -32,7 +32,7 @@ export default function ExerciseNav() {
       {nextRoute ? (
         <Link
           href={nextRoute.href}
-          className="group inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-blue-700 hover:shadow-md active:scale-95"
+          className="btn-primary group inline-flex items-center gap-2 rounded-xl px-6 py-3 text-sm"
         >
           Next Exercise
           <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>

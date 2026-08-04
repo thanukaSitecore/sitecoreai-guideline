@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafb;
+  --foreground: #2c3e50;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: "Inter", "Outfit", var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #000000;
-  }
+  --color-learning-teal: #008080;
+  --color-learning-orange: #f9a826;
+  --color-learning-charcoal: #2c3e50;
+  --color-learning-background: #f8fafb;
+  --color-learning-surface: #e4e9ec;
+  --color-learning-navy: #1a5276;
+  --color-learning-border: #b0bec5;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(0, 128, 128, 0.03) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(249, 168, 38, 0.03) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(248, 250, 251, 1) 0px, transparent 100%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #008080;
+  color: #ffffff;
+}
+
+.glass-card {
+  backdrop-filter: blur(12px);
+  background: color-mix(in oklab, #e4e9ec 45%, white);
+  border: 1px solid color-mix(in oklab, #b0bec5 40%, transparent);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px 0 rgba(44, 62, 80, 0.08);
+}
+
+.btn-primary {
+  background: #008080;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: #006666;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #2c3e50;
+  border: 1px solid color-mix(in oklab, #b0bec5 60%, transparent);
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: color-mix(in oklab, #e4e9ec 45%, white);
 }
