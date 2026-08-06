@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="flex items-center gap-5">
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-learning-teal to-learning-orange text-xs font-bold text-white shadow-lg shadow-learning-teal/20">
-              O
+              
             </div>
             <div className="leading-tight">
               <p className="text-xl font-extrabold tracking-wide">

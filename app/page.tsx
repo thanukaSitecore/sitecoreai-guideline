@@ -12,7 +12,7 @@ export default function HomePage() {
             Interactive Training Suite
           </p>
           <h1 className="text-4xl font-extrabold tracking-tight text-learning-charcoal sm:text-6xl">
-            SitecoreAI <span className="text-learning-teal">Headless</span>
+            SitecoreAI 
             <br />
             <span className="text-learning-navy">Workshop</span>
           </h1>
@@ -28,9 +28,7 @@ export default function HomePage() {
             >
               Get Started
             </Link>
-            <span className="btn-secondary inline-flex items-center rounded-xl px-5 py-3 text-sm">
-              Est. time: 3.5 Hours
-            </span>
+           
           </div>
         </div>
         <div className="flex items-center justify-center md:w-1/2">
@@ -48,22 +46,12 @@ export default function HomePage() {
       <section className="mx-auto mt-12 max-w-5xl space-y-8">
         <div className="grid gap-6 md:grid-cols-3">
           <div className="glass-card rounded-3xl border border-learning-border/35 bg-white/85 p-6">
-            <h2 className="text-xl font-bold text-learning-navy">Completed Tasks</h2>
-            <p className="mt-3 text-sm leading-6 text-learning-charcoal/80">
-              Exercises checked
-            </p>
-            <p className="mt-4 text-4xl font-extrabold text-learning-charcoal">0</p>
-            <p className="text-sm font-semibold text-learning-teal">/14</p>
-          </div>
-
-          <div className="glass-card rounded-3xl border border-learning-border/35 bg-white/85 p-6">
             <span className="rounded-md bg-learning-teal/10 px-2 py-1 text-xs font-semibold text-learning-teal">
               Foundations
             </span>
             <h2 className="mt-3 text-xl font-bold text-learning-navy">Day 1 Modules</h2>
             <p className="mt-3 text-sm leading-6 text-learning-charcoal/80">
-              Covers CLI scaffolding, component manifest definition, SDK tags,
-              and placeholders.
+              Login, local setup, template creation, renderings, and data exercises.
             </p>
           </div>
 
@@ -73,8 +61,17 @@ export default function HomePage() {
             </span>
             <h2 className="mt-3 text-xl font-bold text-learning-navy">Day 2 Modules</h2>
             <p className="mt-3 text-sm leading-6 text-learning-charcoal/80">
-              Covers Connected Mode configs, GraphQL integrations, Simulator
-              sandbox, and deployment rules.
+              Page Builder, Forms, GraphQL, deployment steps, and practical exercises.
+            </p>
+          </div>
+
+          <div className="glass-card rounded-3xl border border-learning-border/35 bg-white/85 p-6">
+            <span className="rounded-md bg-learning-navy/10 px-2 py-1 text-xs font-semibold text-learning-navy">
+              Bonus
+            </span>
+            <h2 className="mt-3 text-xl font-bold text-learning-navy">Bonus Work</h2>
+            <p className="mt-3 text-sm leading-6 text-learning-charcoal/80">
+              Workflow guidance, personalization steps, and extra practice.
             </p>
           </div>
         </div>
