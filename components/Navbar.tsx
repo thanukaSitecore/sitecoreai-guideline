@@ -22,7 +22,7 @@ export default function Navbar() {
             </div>
             <div className="leading-tight">
               <p className="text-xl font-extrabold tracking-wide">
-                SitecireAI
+                SitecoreAI
               </p>
               <span className="rounded-md border border-white/10 bg-white/10 px-2 py-0.5 text-[10px] font-medium text-slate-100">
                 workshop
