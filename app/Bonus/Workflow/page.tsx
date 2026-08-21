@@ -5,7 +5,7 @@ export default function PageBuild() {
     <div className="mt-3">
       <div className="p-10 rounded-lg border border-gray-200 bg-white shadow-sm">
         <div className="mt-2">
-          <span className="text-2xl font-bold">Work Flow</span>
+          <span className="text-2xl font-bold">Workflow</span>
         </div>
         <p className="mt-4 text-slate-700">
           Workflows, states, actions, and commands are all definition items

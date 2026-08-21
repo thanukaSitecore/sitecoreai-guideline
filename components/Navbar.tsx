@@ -41,16 +41,18 @@ export default function Navbar() {
                     <span className="text-[10px]">v</span>
                   </button>
 
-                  <div className="invisible absolute left-0 top-full mt-1 w-72 rounded-2xl border border-learning-border/30 bg-learning-navy/95 py-2 opacity-0 shadow-xl backdrop-blur-lg transition group-hover:visible group-hover:opacity-100">
-                    {items.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block px-4 py-2 text-sm text-slate-200 transition hover:bg-white/10 hover:text-white"
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
+                  <div className="invisible absolute left-0 top-full w-72 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+                    <div className="rounded-2xl border border-learning-border/30 bg-learning-navy/95 py-2 shadow-xl backdrop-blur-lg">
+                      {items.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block px-4 py-2 text-sm text-slate-200 transition hover:bg-white/10 hover:text-white"
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               );
